@@ -21,18 +21,18 @@ namespace C0732149_Assignment4
 
         public void ReadTextFiles()
         {
-            using (StreamReader file = new StreamReader("U:/Users/beowulf.txt"))
+            using (StreamReader file = new StreamReader("U:/Users/732149/beowulf.txt"))
             {
                 int counter = 0;
                 string ln;
 
-                while ((ln = file.ReadLine()) ! = null)
+                while ((ln = file.ReadLine()) != null)
                     {
                     Console.WriteLine(ln);
                     Beowulf.Add(ln);
-                }
+                    }
                 file.Close();
-                Console.WriteLine($"File has {Counter} lines.");
+                Console.WriteLine($"File has {counter} lines.");
             }
         }
         public int FindNumberOfBlankSpaces(string line)
