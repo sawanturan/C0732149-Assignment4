@@ -25,33 +25,18 @@ namespace C0732149_Assignment4
             using (StreamReader file = new StreamReader("U:/Users/732149/beowulf.txt"))
             {
                 int counter = 0;
-
                 int number = 0;
-
                 string line;
-
                 while ((line = file.ReadLine()) != null)
-
                 {
-
-                    if (line.Contains("Sea") && line.Contains("Fare") || line.Contains("sea") && line.Contains("fare"))
-
+                    if (line.Contains("Fare") == true && line.Contains("War") == false || line.Contains("Fare") == true && line.Contains("War") == false)
                     {
-
                         int x = counter - 1;
-
                         number++;
-
                     }
-
                     counter++;
-
                 }
-
-                Console.WriteLine($"The number of lines that contains *Sea* and *Fare* are {number}");
-
-
-
+                Console.WriteLine($"The number of lines that contains *Fare* without the word *War* in the Beowulf file is: {number}");
                 file.Close();
                 counter = File.ReadLines("").Count();
                 Console.WriteLine("Number of Lines in the Beowulf File Are " + counter);
