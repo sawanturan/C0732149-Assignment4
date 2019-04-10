@@ -35,5 +35,16 @@ namespace C0732149_Assignment4
                 Console.WriteLine($"File has {Counter} lines.");
             }
         }
+        public int FindNumberOfBlankSpaces(string line)
+        {
+            int countletters = 0;
+            int countSpaces = 0;
+             foreach (char c in line)
+            {
+                if (char.IsLetter(c)) { countletters++; }
+                if(char.IsWhiteSpace(c)) { countSpaces++; }
+            }
+            return countSpaces;
+        }
     }
 }
