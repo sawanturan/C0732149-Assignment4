@@ -24,7 +24,7 @@ namespace C0732149_Assignment4
         {
             using (StreamReader file = new StreamReader("U:/Users/732149/beowulf.txt"))
             {
-                int counter = 0
+                int counter = 0;
                 int number = 0;
                 string line;
                 while ((line = file.ReadLine()) != null)
